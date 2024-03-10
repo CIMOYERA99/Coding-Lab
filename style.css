@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+.body {
+  background-image: url(./tinywow_change_bg_photo_50114598.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  margin: 0;
+  background-size: contain;
+}
+
+body {
+  background-color: #090909;
+}
+.header {
+  width: 100%;
+  height: 60px;
+  display: block;
+  background-color: #1b1b1b;
+}
+
+.logo {
+  height: 100%;
+  display: table;
+  float: left;
+  padding-left: 25px;
+  color: white;
+  padding-top: 1%;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  width: 40%;
+  margin-left: 57%;
+  padding-top: 1.7%;
+  color: white;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  width: 100%;
+  color: white;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.center h1 {
+  font-size: 32px;
+}
+
+.center div {
+  text-align: center;
+}
+
+.center button {
+  margin: 2% 1%;
+  padding: 3% 7%;
+  border-radius: 5px;
+  cursor: pointer;
+  border: 2px solid white;
+  background-color: transparent;
+  color: white;
+  font-size: 18px;
+  box-shadow: 0 6px 6px rgba(0, 0, 0, 0.6);
+}
+
+/* when we hover on the link */
+button:hover {
+  color: black;
+  background-color: white;
+}
