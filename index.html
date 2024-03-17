@@ -20,7 +20,20 @@
         <a>Contact</a>
         <a>Feedback</a>
       </div>
+
+      <div class="menuIcon">
+        <img src="./menuIcon.svg" />
+      </div>
     </header>
+
+    <div class="mobileNav">
+      <a>Home</a>
+      <a>About</a>
+      <a>Services</a>
+      <a>Contact</a>
+      <a>Feedback</a>
+    </div>
+
     <section class="body">
       <div class="center">
         <div>
@@ -31,5 +44,25 @@
         </div>
       </div>
     </section>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const MenuIcon = document.querySelector(".menuIcon");
+        const mobileModal = document.querySelector(".mobileNav");
+
+        function toggleMobileNav() {
+          if (mobileModal.style.display === "flex") {
+            mobileModal.style.display = "none";
+          } else {
+            mobileModal.style.display = "flex";
+          }
+        }
+
+        if (MenuIcon) {
+          MenuIcon.addEventListener("click", toggleMobileNav);
+          // MenuIcon.addEventListener("click", console.log("is clicking"))
+        }
+      });
+    </script>
   </body>
 </html>

@@ -43,34 +43,13 @@ body {
   padding: 1%;
 }
 
-.nav a{
+.nav a {
   cursor: pointer;
   margin: 0 3%;
   font-weight: 600;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
-/* .logo {
-  height: 100%;
-  display: table;
-  float: left;
-  padding-left: 25px;
-  color: white;
-  /* padding-top: 1%; */
-/* font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif; */
-/* } */
-
-/* .nav {
-  display: flex;
-  justify-content: space-between;
-  width: 40%;
-  margin-left: 57%;
-  padding-top: 1.7%;
-  color: white;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-} */
 
 .center {
   display: flex;
@@ -87,7 +66,7 @@ body {
   font-size: 42px;
 }
 
-.center h2{
+.center h2 {
   font-size: 32px;
   margin-top: 2%;
 }
@@ -112,4 +91,60 @@ body {
 button:hover {
   color: black;
   background-color: white;
+}
+
+.menuIcon {
+  margin-right: 2%;
+  display: none;
+}
+
+.mobileNav {
+  background-color: white;
+  /* display: flex; */
+  flex-direction: column;
+  padding: 2%;
+  position: absolute;
+  left: 65%;
+  margin-top: -3%;
+  width: 30%;
+  border-radius: 10px;
+  display: none;
+}
+
+.mobileNav a {
+  padding: 5% 3%;
+  font-size: 16px;
+  background-color: rgb(248, 248, 248);
+  margin-bottom: 2%;
+  border-radius: 5px;
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    padding: 5% 2%;
+    width: 100vw;
+  }
+  .nav {
+    display: none;
+  }
+  .menuIcon {
+    display: flex;
+    justify-content: flex-end;
+    width: 20%;
+  }
+  .logo {
+    width: 80%;
+  }
+  .logo h1 {
+    font-size: 16px;
+  }
+  .body {
+    background-size: 900px;
+  }
+  .center h1 {
+    font-size: 24px;
+  }
+  .center h2 {
+    font-size: 20px;
+  }
 }
